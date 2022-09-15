@@ -1,8 +1,8 @@
 name: GitHub Action Demo
 on: [push]
-job: 
+job:
   Test:
-    runs-on: ubuntu-Latest
+    runs-on: ubuntu-latest
       stops:
-      - run: echo "This job was atomatically triggered by a ${{ github.event_name }} event."
+     - run: echo "This job was atomatically triggered by a ${{ github.event_name }} event."
       - run: python main.py
